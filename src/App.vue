@@ -11,6 +11,27 @@
 </template>
 
 <style lang="scss">
+@import "./bootstrap/scss/custom.scss";
+
+@font-face {
+  font-family: Metropolis-Bold;
+src: url("./fonts/Metropolis-Bold.otf");
+}
+@font-face {
+  font-family: Playball-Regular;
+  src: url("./fonts/Playball-Regular.ttf");
+}
+@font-face {
+  font-family: Gulim-210-030;
+  src: url("./fonts/210-Gulim-030.ttf");
+}
+@font-face {
+  font-family: Gulim-210-050;
+  src: url("./fonts/210-Gulim-030.ttf");
+}
+.metropolis-bold {
+  font-family: Metropolis-Bold, serif;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,4 +52,18 @@
     }
   }
 }
+</style>
+
+<style lang="sass">
+$vs-card-type-6-color-background-one: #24b171
+$vs-card-type-6-color-background-two: #17a2b8
+$vs-card-type-6-color-text: #fff
+$vs-card-type-6-shadow-opacity: 0.4
+
+$vs-card-type-7-color-background: #f4f6f7
+$vs-card-type-7-color-text: #000
+$vs-card-type-7-shadow-opacity: 0.1
+
+@import './vuesax/sass/customCard'
+
 </style>

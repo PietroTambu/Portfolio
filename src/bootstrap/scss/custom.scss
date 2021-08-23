@@ -1,6 +1,8 @@
 // Base grayscale colors definitions
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
+$gray-125: #f4f6f7 !default;
+$gray-150: #f0f3f4 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -25,15 +27,6 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
-$crypto_stats: #e1a427 !default;
-$crypto_stats_dark: #d09923 !default;
-$city_pollution: $gray-600;
-$city_pollution_dark: $gray-650;
-$fires_map: #dc3545 !default;
-$fires_map_dark: #c92f3e !default;
-$tic_tac_toe: $gray-200;
-$tic_tac_toe_dark: $gray-300;
-
 // Theme color default definitions
 $primary: $blue !default;
 $secondary: $gray-600 !default;
@@ -55,15 +48,7 @@ $theme-colors: (
         'danger': $danger,
         'light': $light,
         'dark': $gray-800,
-        'purple': $purple,
-        'crypto_stats': $crypto_stats,
-        'crypto_stats_dark': $crypto_stats_dark,
-        'city_pollution': $city_pollution,
-        'city_pollution_dark': $city_pollution_dark,
-        'fires_map': $fires_map,
-        'fires_map_dark': $fires_map_dark,
-        'tic_tac_toe': $tic_tac_toe,
-        'tic_tac_toe_dark': $tic_tac_toe_dark
+        'purple': $purple
 );
 
 

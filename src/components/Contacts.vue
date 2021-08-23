@@ -2,9 +2,9 @@
   <div class="div-contacts">
     <b-row class="w-100" style="height: 200px" align-v="center">
       <b-col>
-        <span class="text-show-form" @click="openDialog(1)">Email</span> |
-        <span class="text-show-form" @click="openDialog(2)">Form</span> |
-        <span class="text-show-form" @click="openDialog(3)">Whatsapp <b-img :src="getImage('Whatsapp-Logo', 'svg')" height="16"></b-img></span>
+        <span class="text-show-form" @click="openDialog(1)"><b-icon-envelope></b-icon-envelope> Email</span> |
+        <span class="text-show-form" @click="openDialog(2)">Compile form Here</span> |
+        <span class="text-show-form" @click="openDialog(3)">Whatsapp <b-img class="opacity-50" :src="getImage('Whatsapp-Logo', 'svg')" height="16"></b-img></span>
       </b-col>
     </b-row>
     <!-- form dialog -->
@@ -13,10 +13,10 @@
         <h2 class="not-margin"><b>Contact me</b></h2>
       </template>
       <div>
-        <vs-pagination v-model="current" :length="3" not-arrows/>
+        <vs-pagination v-model="current" :length="3" not-arrows color='#8d959d'/>
       </div>
       <div v-if="current === 1">
-        <vs-button class="mx-auto my-5" href="mailto:pietro.tambu2003@gmail.com" blank primary gradient>Send Email</vs-button>
+        <vs-button class="mx-auto my-5" href="mailto:pietro.tambu2003@gmail.com" blank color='#17a2b8' gradient>Send me a Email</vs-button>
       </div>
       <div v-if="current === 2">
         <div>
@@ -36,7 +36,11 @@
               This field can not be empty
           </vs-alert>
         </div>
-        <vs-button class="mx-auto" @click="sendEmail" primary gradient block>Send Message</vs-button>
+        <vs-button class="mx-auto" @click="sendEmail" color='#17a2b8' gradient block>Send Message</vs-button>
+      </div>
+      <div v-if="current === 3">
+        <b-img class="my-4" :src="getImage('Whatsapp-Logo-Color', 'svg')" height="56"></b-img>
+        <h4 class="mb-5">+39 392 609 0757</h4>
       </div>
       <template #footer>
         <div class="footer-dialog">
@@ -97,6 +101,7 @@ export default {
           this.templateParams.email = ''
           this.templateParams.message = ''
           loading.close()
+          this.openNotificationSuccessForm()
         } else {
           loading.close()
           this.activeDialog = false
@@ -119,7 +124,17 @@ export default {
         color: 'danger',
         position: 'top-left',
         title: 'Error to send Form',
-        text: 'I\'m sorry, there seems to have been a problem with submitting the form. try again or change contact mode'
+        text: 'I\'m sorry, there seems to have been a problem with submitting the form. try again or change contact mode.'
+      })
+    },
+    openNotificationSuccessForm () {
+      this.$vs.notification({
+        duration: '8000',
+        progress: 'auto',
+        color: 'success',
+        position: 'top-left',
+        title: 'Message sent successfully',
+        text: 'Thank you for contacting me, I will reply as soon as possible.'
       })
     },
     openDialog (pagination) {
@@ -140,7 +155,7 @@ export default {
     color: white;
   }
   .text-show-form {
-    color: rgba(255, 255, 255, 0.55)
+    color: rgba(255, 255, 255, 0.5)
     text-decoration: none;
   }
   .text-show-form:hover {

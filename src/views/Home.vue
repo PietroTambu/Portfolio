@@ -1,30 +1,36 @@
 <template>
   <div class="home">
-    <Header />
-    <Bio />
+    <Header @scrollTo="goto($event)" />
+    <AboutMe />
     <Skills />
-    <Projects />
-    <!-- <Vuesax /> -->
+    <Projects id="projects"/>
     <Contacts />
   </div>
 </template>
 
 <script>
+import { scroller } from 'vue-scrollto/src/scrollTo'
+
 import Header from '@/components/Header.vue'
-import Bio from '@/components/Biography.vue'
+import AboutMe from '@/components/AboutMe.vue'
 import Skills from '@/components/Skills.vue'
 import Projects from '@/components/Projects.vue'
 import Contacts from '@/components/Contacts.vue'
-// import Vuesax from '@/components/Vuesax.vue' -->
 
 export default {
   name: 'Home',
   components: {
     Header,
-    Bio,
+    AboutMe,
     Skills,
     Projects,
     Contacts
+  },
+  methods: {
+    goto (refName) {
+      const firstScrollTo = scroller()
+      firstScrollTo('#' + refName)
+    }
   }
 }
 

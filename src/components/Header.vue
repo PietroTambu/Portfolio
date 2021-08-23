@@ -1,14 +1,14 @@
 <template>
-  <div class="div-header">
+  <div class="div-header" :style="inlineBgImage('Code-JavaScript-Background', 'jpg')">
     <b-container>
       <b-row class="text-center" align-v="center" style="height: 500px;">
         <b-col>
-          <p class="display-6">Hi there, I'm</p>
-          <p class="display-2">Pietro Tamburini</p>
-          <div class="blockquote-footer" style="font-size: 20px;">
+          <p class="display-6" style="font-family: Playball-Regular, serif">Hello there, I'm</p>
+          <p class="display-3 metropolis-bold" style="letter-spacing: 0.0388235em;">PIETRO TAMBURINI</p>
+          <div class="blockquote-footer" style="font-size: 20px; color: rgba(255,255,255,0.7)">
             <cite title="Source Title">Full Stack Development</cite> Student
           </div>
-          <b-button class="btn-secondary">View my projects</b-button>
+          <vs-button class="mx-auto mt-4" @click="$emit('scrollTo','projects')" color='#17a2b8' gradient>View my Projects</vs-button>
         </b-col>
       </b-row>
     </b-container>
