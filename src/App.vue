@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss">
-@import "./bootstrap/scss/custom.scss";
+@import "./_bootstrap/scss/custom.scss";
 
 @font-face {
   font-family: Metropolis-Bold;
@@ -64,6 +64,6 @@ $vs-card-type-7-color-background: #f4f6f7
 $vs-card-type-7-color-text: #000
 $vs-card-type-7-shadow-opacity: 0.1
 
-@import './vuesax/sass/customCard'
+@import '_vuesax/sass/customCard'
 
 </style>

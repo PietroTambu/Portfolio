@@ -146,8 +146,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '../vuesax/stylus/contact.styl'
-@import "../bulma/css/bulma.custom.min.css"
+@import '../_vuesax/stylus/contact.styl'
+@import "../_bulma/css/bulma.custom.min.css"
 
   .div-contacts {
     height: 200px;

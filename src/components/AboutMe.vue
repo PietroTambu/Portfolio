@@ -8,8 +8,8 @@
           </template>
           <template #text>
             <p>Hi I am Pietro Tamburini, a self-taught Full stack development student. I am {{ myAge }} years old and I live in Milan where I am attending my last and fifth year of Scientific High School of Applied Sciences.<br>
-              I have start coding when I was twelve with Visual Basic, until I was sixteen I played with Macros (.lua .ahk) and C. Then at the age of 16 I started a Full Stack Developer course.<br>
-              I have always appreciated the logic and complexity of programming and I follow the world of blockchain technology with interest.</p>
+              I have start coding when I was twelve with Visual Basic, until I was sixteen I played with Macros (.lua .ahk) and C. Then I started a Full Stack Developer course.<br>
+              Since I was young I have always appreciated the logic and complexity of programming and currently I am interested in the world of blockchain technology.</p>
           </template>
         </vs-card>
       </b-col>

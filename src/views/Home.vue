@@ -26,11 +26,37 @@ export default {
     Projects,
     Contacts
   },
+  data: function () {
+    return {
+      loading: ''
+    }
+  },
   methods: {
     goto (refName) {
       const firstScrollTo = scroller()
       firstScrollTo('#' + refName)
+    },
+    openLoading () {
+      this.loading = this.$vs.loading({
+        background: '#2b2b2c',
+        color: '#000',
+        type: 'circles'
+      })
+    },
+    closeLoading () {
+      try {
+        this.loading.close()
+      } catch { console.log('Already Loaded') }
     }
+  },
+  created () {
+    this.openLoading()
+    setTimeout(() => {
+      this.closeLoading()
+    }, 6000)
+  },
+  mounted () {
+    this.closeLoading()
   }
 }
 
