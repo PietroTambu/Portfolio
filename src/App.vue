@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: Metropolis-Bold;
-src: url("./fonts/Metropolis-Bold.otf");
+  src: url("./fonts/Metropolis-Bold.otf");
 }
 @font-face {
   font-family: Playball-Regular;

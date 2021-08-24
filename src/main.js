@@ -32,6 +32,7 @@ const firebaseConfig = {
 }
 
 firebase.initializeApp(firebaseConfig)
+firebase.analytics()
 
 new Vue({
   router,
