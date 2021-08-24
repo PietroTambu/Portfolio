@@ -48,7 +48,7 @@ export default {
         { name: 'HTML & CSS', type: 'Hard Skill', rating: 'Great', level: 7 },
         { name: 'PHP & MySQL', type: 'Hard Skill', rating: 'Good', level: 6 },
         { name: 'Python', type: 'Hard Skill', rating: 'Good', level: 6 },
-        { name: 'C', type: 'Hard Skill', rating: 'Ok', level: 4 },
+        { name: 'C', type: 'Hard Skill', rating: 'Ok', level: 4.5 },
         { name: 'Problem Solving', type: 'Soft Skill', rating: 'Very Good', level: [true, 4.1] },
         { name: 'Precision', type: 'Soft Skill', rating: 'Good', level: [true, 3] },
         { name: 'Resilience', type: 'Soft Skill', rating: 'Great', level: [true, 3.7] },

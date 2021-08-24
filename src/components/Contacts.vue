@@ -1,6 +1,6 @@
 <template>
   <div class="div-contacts">
-    <b-row class="w-100" style="height: 200px" align-v="center">
+    <b-row style="height: 200px" align-v="center">
       <b-col>
         <span class="text-show-form" @click="openDialog(1)"><b-icon-envelope></b-icon-envelope> Email</span> |
         <span class="text-show-form" @click="openDialog(2)">Compile form Here</span> |

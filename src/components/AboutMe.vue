@@ -19,9 +19,9 @@
             <h2>Pietro Tamburini</h2>
           </template>
           <template #text>
-            <p>Italian boy <b-img height="18" :src="getImage('Icon-Italy-Flag', 'png')"></b-img></p>
-            <p>{{ myAge }} years old <b-img height="18" :src="getImage('Icon-Years', 'png')"></b-img></p>
-            <p>Scientific high School of A.S. <b-img height="18" :src="getImage('Icon-School', 'png')"></b-img></p>
+            <p>Italian Boy <b-img height="18" :src="getImage('Icon-Italy-Flag', 'png')"></b-img></p>
+            <p>{{ myAge }} Years Old <b-img height="18" :src="getImage('Icon-Years', 'png')"></b-img></p>
+            <p>Scientific High School of A.S. <b-img height="18" :src="getImage('Icon-School', 'png')"></b-img></p>
             <p>Milano zone 2 - 20128 <b-img height="18" :src="getImage('Icon-Location-Marker', 'png')"></b-img></p>
             <p>Love Coding <b-img height="18" :src="getImage('Icon-Coding', 'png')"></b-img></p>
           </template>
