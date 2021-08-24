@@ -11,9 +11,17 @@
     <div class="mx-auto div-table">
       <b-table striped hover :items="items" :fields="filteredFields" bordered fixed dark responsive>
         <template #cell(level)="data">
-          <b-progress height="20px" :value="data.value[1]" max="5" variant="purple" v-if="data.value[0]"></b-progress>
-          <b-progress height="20px" :value="data.value" max="10" variant="success" :precision="1" v-else-if="!Number.isInteger(data.value)" show-value></b-progress>
-          <b-progress height="20px" :value="data.value" max="10" variant="success" show-value v-else></b-progress>
+          <b-progress height="23px" :value="data.value[1]" max="5" variant="purple" v-if="data.value[0]"></b-progress>
+          <b-progress height="25px" :value="data.value" max="10" variant="success" :precision="1" v-else-if="!Number.isInteger(data.value)" show-value>
+            <b-progress-bar :value="data.value">
+              <span style="font-size: 0.8rem"> {{ data.value }}</span>
+            </b-progress-bar>
+          </b-progress>
+          <b-progress height="25px" :value="data.value" max="10" variant="success" show-value v-else>
+            <b-progress-bar :value="data.value">
+              <span style="font-size: 0.8rem"> {{ data.value }}</span>
+            </b-progress-bar>
+          </b-progress>
         </template>
         <template #cell(type)="data">
           <span class="text-nowrap">{{ data.value }}</span>
@@ -93,7 +101,7 @@ export default {
   height: fit-content;
   background-color: #2b2b2c;
   color: white;
-  font-family: Gulim-210-030, serif
+  font-family: gulim030, serif
 }
 .div-table {
   width: 85%;

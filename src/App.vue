@@ -12,15 +12,11 @@
 
 <style lang="scss">
 @import "./_bootstrap/scss/custom.scss";
+@import "./fonts/metropolis-bold/metropolis.css";
+@import "./fonts/playball-regular/playball.css";
+@import "./fonts/210-gulim-030/210-gulim-030.css";
+@import "./fonts/210-gulim-050/210-gulim-050.css";
 
-@font-face {
-  font-family: Metropolis-Bold;
-  src: url("./fonts/Metropolis-Bold.otf");
-}
-@font-face {
-  font-family: Playball-Regular;
-  src: url("./fonts/Playball-Regular.ttf");
-}
 @font-face {
   font-family: Gulim-210-030;
   src: url("./fonts/210-Gulim-030.ttf");
@@ -30,7 +26,7 @@
   src: url("./fonts/210-Gulim-030.ttf");
 }
 .metropolis-bold {
-  font-family: Metropolis-Bold, serif;
+  font-family: metropolisbold, serif;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

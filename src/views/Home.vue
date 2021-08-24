@@ -56,7 +56,9 @@ export default {
     }, 6000)
   },
   mounted () {
-    this.closeLoading()
+    setTimeout(() => {
+      this.closeLoading()
+    }, 1000)
   }
 }
 

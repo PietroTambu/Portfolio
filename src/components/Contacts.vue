@@ -2,45 +2,44 @@
   <div class="div-contacts">
     <b-row style="height: 200px" align-v="center">
       <b-col>
-        <span class="text-show-form" @click="openDialog(1)"><b-icon-envelope></b-icon-envelope> Email</span> |
-        <span class="text-show-form" @click="openDialog(2)">Compile form Here</span> |
-        <span class="text-show-form" @click="openDialog(3)">Whatsapp <b-img class="opacity-50" :src="getImage('Whatsapp-Logo', 'svg')" height="16"></b-img></span>
+        <span class="text-show-form gulim050" @click="openDialog(1)"><b-icon-envelope></b-icon-envelope> Email</span> |
+        <span class="text-show-form gulim050" @click="openDialog(2)">Quick Contact Form</span> |
+        <span class="text-show-form gulim050" @click="openDialog(3)">Whatsapp <b-img class="opacity-50" :src="getImage('Whatsapp-Logo', 'svg')" height="16"></b-img></span>
       </b-col>
     </b-row>
-    <!-- form dialog -->
     <vs-dialog blur prevent-close v-model="activeDialog" ref="content">
       <template #header>
-        <h2 class="not-margin"><b>Contact me</b></h2>
+        <h2 class="not-margin metropolis-bold"><b>Contact me</b></h2>
       </template>
       <div>
         <vs-pagination v-model="current" :length="3" not-arrows color='#8d959d'/>
       </div>
       <div v-if="current === 1">
-        <vs-button class="mx-auto my-5" href="mailto:pietro.tambu2003@gmail.com" blank color='#17a2b8' gradient>Send me a Email</vs-button>
+        <vs-button class="mx-auto my-5 gulim050" style="font-size: .85rem" href="mailto:pietro.tambu2003@gmail.com" blank color='#17a2b8' gradient>Send me a Email</vs-button>
       </div>
       <div v-if="current === 2">
         <div>
-          <p class="not-margin">Please, fill the form then press send message</p>
+          <p class="not-margin gulim050">Please, fill the form then press send message</p>
         </div>
         <div class="con-form">
-          <vs-input class="mb-3" type="text" v-model="templateParams.name" placeholder="Name" :state="variantInputName" block>
+          <vs-input class="mb-3 gulim050" type="text" v-model="templateParams.name" placeholder="Name" :state="variantInputName" block>
             <template #icon><b-icon-person></b-icon-person></template>
           </vs-input>
-          <vs-input class="mb-3" type="email" v-model="templateParams.email" placeholder="Email" :state="variantInputEmail" block>
+          <vs-input class="mb-3 gulim050" type="email" v-model="templateParams.email" placeholder="Email" :state="variantInputEmail" block>
             <template #icon>@</template>
           </vs-input>
           <div>
-            <textarea class="textarea is-info" v-model="templateParams.message" placeholder="Your message..."></textarea>
+            <textarea class="textarea is-info gulim050" v-model="templateParams.message" placeholder="Your message..."></textarea>
           </div>
           <vs-alert class="my-1" v-model="alertTextarea" danger>
               This field can not be empty
           </vs-alert>
         </div>
-        <vs-button class="mx-auto" @click="sendEmail" color='#17a2b8' gradient block>Send Message</vs-button>
+        <vs-button class="mx-auto gulim050" style="font-size: .85rem" @click="sendEmail" color='#17a2b8' gradient block>Send Message</vs-button>
       </div>
       <div v-if="current === 3">
         <b-img class="my-4" :src="getImage('Whatsapp-Logo-Color', 'svg')" height="56"></b-img>
-        <h4 class="mb-5">+39 392 609 0757</h4>
+        <h4 class="mb-5"><span class="opacity-50">+39</span> 392 609 0757</h4>
       </div>
       <template #footer>
         <div class="footer-dialog">
@@ -161,5 +160,11 @@ export default {
   .text-show-form:hover {
     cursor: pointer;
     text-decoration: underline;
+  }
+  .gulim030 {
+    font-family gulim030, serif;
+  }
+  .gulim050 {
+    font-family gulim050, serif;
   }
 </style>
