@@ -17,13 +17,11 @@
 @import "./fonts/210-gulim-030/210-gulim-030.css";
 @import "./fonts/210-gulim-050/210-gulim-050.css";
 
-@font-face {
-  font-family: Gulim-210-030;
-  src: url("./fonts/210-Gulim-030.ttf");
+.gulim030 {
+  font-family: gulim030, serif;
 }
-@font-face {
-  font-family: Gulim-210-050;
-  src: url("./fonts/210-Gulim-030.ttf");
+.gulim050 {
+  font-family: gulim050, serif;
 }
 .metropolis-bold {
   font-family: metropolisbold, serif;

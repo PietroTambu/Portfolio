@@ -8,7 +8,7 @@
           <div class="blockquote-footer" style="font-size: 20px; color: rgba(255,255,255,0.7)">
             <cite title="Source Title">Full Stack Development Student</cite>
           </div>
-          <vs-button class="mx-auto mt-4" @click="$emit('scrollTo','projects')" color='#17a2b8' gradient>View my Projects</vs-button>
+          <vs-button class="mx-auto mt-4 gulim050" @click="$emit('scrollTo','projects')" color='#17a2b8' gradient>View my Projects</vs-button>
         </b-col>
       </b-row>
     </b-container>

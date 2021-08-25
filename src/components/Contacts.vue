@@ -161,10 +161,4 @@ export default {
     cursor: pointer;
     text-decoration: underline;
   }
-  .gulim030 {
-    font-family gulim030, serif;
-  }
-  .gulim050 {
-    font-family gulim050, serif;
-  }
 </style>
