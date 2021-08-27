@@ -8,14 +8,12 @@
       </template>
       <div class="con-content">
         <h3 class="text-center d-inline-flex font-size-150">
-          <vs-button size="xl" href="/" color="#17a2b8" transparent>Home Page</vs-button>
+          <vs-button size="xl" href="/" color="#17a2b8" border>Home Page</vs-button>
         </h3>
       </div>
       <template #footer>
         <div class="con-footer">
-          <vs-button @click="active=false" color="#17a2b8" transparent>
-            Ok
-          </vs-button>
+          <p class="mx-auto">Page not found, please return to home page</p>
         </div>
       </template>
     </vs-dialog>
@@ -33,4 +31,4 @@ export default {
 }
 </script>
 
-<style src="../_vuesax/stylus/customDialog.styl" lang="stylus"></style>
+<style src="../_vuesax/stylus/customDialogError.styl" lang="stylus"></style>

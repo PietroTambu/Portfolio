@@ -144,5 +144,5 @@ export default {
 }
 </script>
 
-<style src="../../_vuesax/stylus/contact.styl" lang="stylus" scoped></style>
+<style src="../../_vuesax/stylus/customDialogFooter.styl" lang="stylus" scoped></style>
 <style src="./Footer.scss" lang="scss" scoped></style>
