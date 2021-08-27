@@ -11,11 +11,11 @@
 <script>
 import { scroller } from 'vue-scrollto/src/scrollTo'
 
-import Header from '@/components/Header.vue'
+import Header from '@/components/Header/Header.vue'
 import AboutMe from '@/components/AboutMe.vue'
-import Skills from '@/components/Skills.vue'
+import Skills from '@/components/Skills/Skills.vue'
 import Projects from '@/components/Projects.vue'
-import Contacts from '@/components/Contacts.vue'
+import Contacts from '@/components/Footer/Footer.vue'
 
 export default {
   name: 'Home',

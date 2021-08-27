@@ -1,6 +1,6 @@
 <template>
   <div class="div-contacts">
-    <b-row style="height: 200px" align-v="center">
+    <b-row class="div-contacts" align-v="center">
       <b-col>
         <span class="text-show-form gulim050" @click="openDialog(1)"><b-icon-envelope></b-icon-envelope> Email</span> |
         <span class="text-show-form gulim050" @click="openDialog(2)">Quick Contact Form</span> |
@@ -15,7 +15,7 @@
         <vs-pagination v-model="current" :length="3" not-arrows color='#8d959d'/>
       </div>
       <div v-if="current === 1">
-        <vs-button class="mx-auto my-5 gulim050" style="font-size: .85rem" href="mailto:pietro.tambu2003@gmail.com" blank color='#17a2b8' gradient>Send me a Email</vs-button>
+        <vs-button class="mx-auto my-5 gulim050 font-size-85" href="mailto:pietro.tambu2003@gmail.com" blank color='#17a2b8' gradient>Send me a Email</vs-button>
       </div>
       <div v-if="current === 2">
         <div>
@@ -35,7 +35,7 @@
               This field can not be empty
           </vs-alert>
         </div>
-        <vs-button class="mx-auto gulim050" style="font-size: .85rem" @click="sendEmail" color='#17a2b8' gradient block>Send Message</vs-button>
+        <vs-button class="mx-auto gulim050 font-size-85" @click="sendEmail" color='#17a2b8' gradient block>Send Message</vs-button>
       </div>
       <div v-if="current === 3">
         <b-img class="my-4" :src="getImage('Whatsapp-Logo-Color', 'svg')" height="56"></b-img>
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import helpers from '../js/helpers'
+import helpers from '../../js/helpers'
 
 export default {
   name: 'Contacts',
@@ -144,21 +144,5 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-@import '../_vuesax/stylus/contact.styl'
-@import "../_bulma/css/bulma.custom.min.css"
-
-  .div-contacts {
-    height: 200px;
-    background-color: #2b2b2c;
-    color: white;
-  }
-  .text-show-form {
-    color: rgba(255, 255, 255, 0.5)
-    text-decoration: none;
-  }
-  .text-show-form:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-</style>
+<style src="../../_vuesax/stylus/contact.styl" lang="stylus" scoped></style>
+<style src="./Footer.scss" lang="scss" scoped></style>

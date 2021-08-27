@@ -1,8 +1,8 @@
 <template>
-  <div class="div-bio p-4">
+  <div class="background-fdfdfe p-4">
     <b-row align-v="center" cols="1" cols-sm="1" cols-md="1" >
       <b-col lg="7" xl="8" class="my-3" align="center">
-        <vs-card type="7" about-me-description>
+        <vs-card type="7">
           <template #title>
             <h2><b>About Me</b></h2>
           </template>
@@ -16,7 +16,7 @@
       <b-col lg="5" xl="4" align="center" class="my-3">
         <vs-card type="6">
           <template #title>
-            <h2 style="letter-spacing: 0.05rem"><b>Pietro Tamburini</b></h2>
+            <h2 class="letter-spacing-0-05"><b>Pietro Tamburini</b></h2>
           </template>
           <template #text>
             <p>Italian Boy <b-img height="18" :src="getImage('Icon-Italy-Flag', 'png')"></b-img></p>
@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     getImage (name, extension) {
-      return require('@/assets/' + name + '.' + extension)
+      return require(`@/assets/${name}.${extension}`)
     }
   },
   created () {
@@ -54,14 +54,3 @@ export default {
 }
 
 </script>
-
-<style scoped>
-.about-me-description {
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 20px 30px 20px 30px;
-  min-height: 153px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-</style>

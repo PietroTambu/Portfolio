@@ -1,7 +1,7 @@
 <template>
   <div class="div-skills">
     <h1>
-      <vs-tooltip warn style="width: fit-content; cursor: default" class="mx-auto" right>
+      <vs-tooltip class="mx-auto tooltip-vuesax" warn right>
         <span class="metropolis-bold display-6">Skills</span><b-icon-info-circle scale="0.5" shift-h="-2" shift-v="3"></b-icon-info-circle>
         <template #tooltip>
           The values in the table are subjective
@@ -14,12 +14,12 @@
           <b-progress height="23px" :value="data.value[1]" max="5" variant="purple" v-if="data.value[0]"></b-progress>
           <b-progress height="25px" :value="data.value" max="10" variant="success" :precision="1" v-else-if="!Number.isInteger(data.value)" show-value>
             <b-progress-bar :value="data.value">
-              <span style="font-size: 0.8rem"> {{ data.value }}</span>
+              <span class="font-size-80"> {{ data.value }}</span>
             </b-progress-bar>
           </b-progress>
           <b-progress height="25px" :value="data.value" max="10" variant="success" show-value v-else>
             <b-progress-bar :value="data.value">
-              <span style="font-size: 0.8rem"> {{ data.value }}</span>
+              <span class="font-size-80"> {{ data.value }}</span>
             </b-progress-bar>
           </b-progress>
         </template>
@@ -35,7 +35,7 @@
         </template>
       </b-table>
     </div>
-    <p style="font-size: 1rem">
+    <p class="font-size-100">
       It is possible to view my Start2Impact profile via the following link:
       <a href="https://talent.start2impact.it/profile/pietro-tamburini" target="_blank" class="text-white">My Profile</a>
     </p>
@@ -93,19 +93,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-.div-skills {
-  border: 2px solid black;
-  padding: 15px 10px 10px 10px;
-  height: fit-content;
-  background-color: #2b2b2c;
-  color: white;
-  font-family: gulim030, serif
-}
-.div-table {
-  width: 85%;
-  max-width: 750px;
-  font-size: 1.1rem;
-}
-</style>
+<style src="./Skills.scss" lang="scss" scoped></style>

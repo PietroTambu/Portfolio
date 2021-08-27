@@ -16,7 +16,9 @@ import 'vuesax/dist/vuesax.css'
 
 Vue.use(Vuesax, {})
 Vue.use(VueScrollTo)
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue, {
+  breakpoints: ['xs', 'gm', 'sm', 'md', 'lg', 'xl', 'xxl']
+})
 Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
