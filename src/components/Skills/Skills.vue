@@ -35,6 +35,12 @@
         </template>
       </b-table>
     </div>
+    <div class="separator"><hr></div>
+    <p class="font-size-130">
+      JavaScript Algorithms and Data Structures
+      <a href="https://www.freecodecamp.org/certification/fcc9706ec7b-335d-4c95-a3bf-e2a56f480491/javascript-algorithms-and-data-structures" target="_blank" class="text-white">Certification</a>
+      from FreeCodeCamp
+    </p>
     <p class="font-size-100">
       It is possible to view my Start2Impact profile via the following link:
       <a href="https://talent.start2impact.it/profile/pietro-tamburini" target="_blank" class="text-white">My Profile</a>
@@ -52,11 +58,11 @@ export default {
       ignore: ['type'],
       items: [
         { name: 'JavaScript', type: 'Hard Skill', rating: 'Very Good', level: 8.5 },
-        { name: 'Vue.js', type: 'Hard Skill', rating: 'Great', level: 7.5 },
+        { name: 'Vue.js', type: 'Hard Skill', rating: 'Very Good', level: 8.5 },
         { name: 'HTML & CSS', type: 'Hard Skill', rating: 'Great', level: 7 },
+        { name: 'Python', type: 'Hard Skill', rating: 'Good', level: 6.5 },
         { name: 'PHP & MySQL', type: 'Hard Skill', rating: 'Good', level: 6 },
-        { name: 'Python', type: 'Hard Skill', rating: 'Good', level: 6 },
-        { name: 'C', type: 'Hard Skill', rating: 'Ok', level: 4.5 },
+        { name: 'C', type: 'Hard Skill', rating: 'Ok', level: 5 },
         { name: 'Problem Solving', type: 'Soft Skill', rating: 'Very Good', level: [true, 4.1] },
         { name: 'Precision', type: 'Soft Skill', rating: 'Good', level: [true, 3] },
         { name: 'Resilience', type: 'Soft Skill', rating: 'Great', level: [true, 3.7] },
