@@ -1,0 +1,17 @@
+
+$theme-colors: () !default;
+$theme-colors: (
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+        'info': $info,
+        'warning': $warning,
+        'danger': $danger,
+        'light': $light,
+        'dark': $gray-800,
+        'purple': $purple
+);
+
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

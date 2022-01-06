@@ -1,0 +1,3 @@
+@mixin font-size($size, $type) {
+  font-size: $size + $type
+}
