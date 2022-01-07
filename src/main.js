@@ -6,8 +6,8 @@ import store from './store'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import VueScrollTo from 'vue-scrollto'
 
-import firebase from 'firebase/app'
-import 'firebase/analytics'
+import { initializeApp } from 'firebase/app'
+import { getAnalytics } from 'firebase/analytics'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'material-icons/iconfont/material-icons.css'
@@ -33,8 +33,8 @@ const firebaseConfig = {
   measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID
 }
 
-firebase.initializeApp(firebaseConfig)
-firebase.analytics()
+initializeApp(firebaseConfig)
+getAnalytics()
 
 new Vue({
   router,
