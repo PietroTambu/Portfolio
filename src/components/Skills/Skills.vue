@@ -41,10 +41,10 @@
       <a href="https://www.freecodecamp.org/certification/fcc9706ec7b-335d-4c95-a3bf-e2a56f480491/javascript-algorithms-and-data-structures" target="_blank" class="text-white">Certification</a>
       from FreeCodeCamp
     </p>
-    <p class="font-size-100">
-      It is possible to view my Start2Impact profile via the following link:
-      <a href="https://talent.start2impact.it/profile/pietro-tamburini" target="_blank" class="text-white">My Profile</a>
-    </p>
+<!--    <p class="font-size-100">-->
+<!--      It is possible to view my Start2Impact profile via the following link:-->
+<!--      <a href="https://talent.start2impact.it/profile/pietro-tamburini" target="_blank" class="text-white">My Profile</a>-->
+<!--    </p>-->
   </div>
 </template>
 
@@ -57,16 +57,16 @@ export default {
       isMobile: false,
       ignore: ['type'],
       items: [
-        { name: 'JavaScript', type: 'Hard Skill', rating: 'Excellent', level: 9.5 },
+        { name: 'JavaScript', type: 'Hard Skill', rating: 'Excellent', level: 9 },
         { name: 'Vue.js', type: 'Hard Skill', rating: 'Very Good', level: 9 },
-        { name: 'HTML5, CSS3, SASS', type: 'Hard Skill', rating: 'Very Good', level: 9 },
-        { name: 'Git', type: 'Hard Skill', rating: 'Good', level: 8.5 },
-        { name: 'Node.js', type: 'Hard Skill', rating: 'Great', level: 8 },
-        { name: 'Python', type: 'Hard Skill', rating: 'Great', level: 8 },
+        { name: 'HTML5, CSS3, SASS', type: 'Hard Skill', rating: 'Very Good', level: 8.5 },
+        { name: 'Python', type: 'Hard Skill', rating: 'Great', level: 8.5 },
         { name: 'React', type: 'Hard Skill', rating: 'Great', level: 7.5 },
+        { name: 'Dart', type: 'Hard Skill', rating: 'Good', level: 7.5 },
+        { name: 'Solidity', type: 'Hard Skill', rating: 'Good', level: 6.5 },
+        { name: 'Resilience', type: 'Soft Skill', rating: 'Excellent', level: [true, 4.8] },
         { name: 'Problem Solving', type: 'Soft Skill', rating: 'Very Good', level: [true, 4.2] },
         { name: 'Precision', type: 'Soft Skill', rating: 'Great', level: [true, 3.6] },
-        { name: 'Resilience', type: 'Soft Skill', rating: 'Great', level: [true, 3.9] },
         { name: 'Proactivity', type: 'Soft Skill', rating: 'Good', level: [true, 3.4] }
       ],
       fields: [

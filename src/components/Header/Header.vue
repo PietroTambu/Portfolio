@@ -6,7 +6,7 @@
           <p class="display-6" style="font-family: playballregular, serif">Hello there, I'm</p>
           <p class="display-3 metropolis-bold letter-spacing-0-038">PIETRO TAMBURINI</p>
           <div class="blockquote-footer">
-            <cite title="Source Title">Full Stack Developer</cite>
+            <cite title="Source Title">Full Stack & Blockchain Developer</cite>
           </div>
           <vs-button class="mx-auto mt-4 gulim050" @click="$emit('scrollTo','projects')" color='#17a2b8' gradient>View my Projects</vs-button>
         </b-col>
