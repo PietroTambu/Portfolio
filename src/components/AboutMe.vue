@@ -7,9 +7,7 @@
             <h2><b>About Me</b></h2>
           </template>
           <template #text>
-            <p>Hi I am Pietro Tamburini, a self-taught Full Stack Development Student. I am {{ myAge }} years old and I live in Milan where I am attending my last and fifth year of Scientific High School of Applied Sciences.<br>
-              I have start coding when I was twelve with Visual Basic, until I was sixteen I played with Macros (.lua .ahk) and C. Now I am a Full Stack Developer working with React, Vue.js and Node.js.<br>
-              I have always appreciated the logic and complexity of programming. Therefore I strive to create simple and intuitive modern UIs.</p>
+            <p v-for="item in aboutMeData" :key="item">{{ item }}</p>
           </template>
         </vs-card>
       </b-col>
@@ -21,8 +19,8 @@
           <template #text>
             <p>Italian Boy <b-img height="18" :src="getImage('Icon-Italy-Flag', 'png')"></b-img></p>
             <p>{{ myAge }} Years Old <b-img height="18" :src="getImage('Icon-Years', 'png')"></b-img></p>
-            <p>Scientific High School of A.S. <b-img height="18" :src="getImage('Icon-School', 'png')"></b-img></p>
-            <p>Milano zone 2 - 20128 <b-img height="18" :src="getImage('Icon-Location-Marker', 'png')"></b-img></p>
+            <p>Informatics at Bicocca University <b-img height="18" :src="getImage('Icon-School', 'png')"></b-img></p>
+            <p>Milan - 20128 <b-img height="18" :src="getImage('Icon-Location-Marker', 'png')"></b-img></p>
             <p>Love Coding <b-img height="18" :src="getImage('Icon-Coding', 'png')"></b-img></p>
           </template>
         </vs-card>
@@ -35,7 +33,13 @@
 
 export default {
   name: 'AboutMe',
-  data: function () {
+  props: {
+    aboutMeData: {
+      type: Array,
+      required: true
+    }
+  },
+  data () {
     return {
       myAge: Number
     }

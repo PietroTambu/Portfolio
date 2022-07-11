@@ -1,0 +1,92 @@
+{
+  "portfolio" : {
+    "headerTitle": "FrontEnd Developer",
+    "aboutMe": [
+      "Hi I am Pietro Tamburini, a Front-End Development. I am 18 years old and I live in Milan",
+      "I started coding when I was twelve with Visual Basic. I am now mainly a Front-End developer working with React, Vue.js.",
+      "I started my work experience in December 2021 at the diveedi-lab as Junior Front-End developer.",
+      "In June 2022 I graduated at the High School of Applied Sciences of IIS J.C. Maxwell Milano",
+      "Furthermore I love languages like Python for data sort/plot and Solidity for smart contracts"
+    ],
+    "skill": [
+      {
+        "name": "JavaScript - TypeScript",
+        "type": "Hard Skill",
+        "level": 9.5,
+        "rating": "Excellent"
+      },
+      {
+        "name": "React",
+        "type": "Hard Skill",
+        "level": 9,
+        "rating": "Excellent"
+      },
+      {
+        "name": "Vue.js",
+        "type": "Hard Skill",
+        "level": 8.5,
+        "rating": "Very Good"
+      },
+      {
+        "name": "HTML5, CSS3, SASS",
+        "type": "Hard Skill",
+        "level": 8.5,
+        "rating": "Very Good"
+      },
+      {
+        "name": "Python",
+        "type": "Hard Skill",
+        "level": 8.5,
+        "rating": "Great"
+      },
+      {
+        "name": "Flutter, Dart",
+        "type": "Hard Skill",
+        "level": 7.5,
+        "rating": "Good"
+      },
+      {
+        "name": "Solidity",
+        "type": "Hard Skill",
+        "level": 7,
+        "rating": "Good"
+      },
+      {
+        "name": "Resilience",
+        "type": "Soft Skill",
+        "level": [
+          true,
+          5
+        ],
+        "rating": "Excellent"
+      },
+      {
+        "name": "Problem Solving",
+        "type": "Soft Skill",
+        "level": [
+          true,
+          4.7
+        ],
+        "rating": "Very Good"
+      },
+      {
+        "name": "Precision",
+        "type": "Soft Skill",
+        "level": [
+          true,
+          4.9
+        ],
+        "rating": "Excellent"
+      },
+      {
+        "name": "Proactivity",
+        "type": "Soft Skill",
+        "level": [
+          true,
+          4.9
+        ],
+        "rating": "Excellent"
+      }
+    ]
+  }
+}

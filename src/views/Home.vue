@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header @scrollTo="goto($event)" />
-    <AboutMe />
-    <Skills />
+    <Header @scrollTo="goto($event)" :headerData="data.headerTitle" />
+    <AboutMe :aboutMeData="data.aboutMe"/>
+    <Skills :skillsData="data.skill"/>
     <Projects id="projects"/>
     <Contacts />
   </div>
@@ -16,6 +16,7 @@ import AboutMe from '@/components/AboutMe.vue'
 import Skills from '@/components/Skills/Skills.vue'
 import Projects from '@/components/Projects/Projects.vue'
 import Contacts from '@/components/Footer/Footer.vue'
+import helpers from '@/js/helpers'
 
 export default {
   name: 'Home',
@@ -28,7 +29,8 @@ export default {
   },
   data: function () {
     return {
-      loading: ''
+      loading: '',
+      data: {}
     }
   },
   methods: {
@@ -49,8 +51,9 @@ export default {
       } catch { console.log('Already Loaded') }
     }
   },
-  created () {
+  async created () {
     this.openLoading()
+    this.data = await helpers.getData()
     setTimeout(() => {
       this.closeLoading()
     }, 6000)

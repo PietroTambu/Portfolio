@@ -9,7 +9,7 @@
       </vs-tooltip>
     </h1>
     <div class="mx-auto div-table">
-      <b-table striped hover :items="items" :fields="filteredFields" bordered fixed dark responsive>
+      <b-table striped hover :items="skillsData" :fields="filteredFields" bordered fixed dark responsive>
         <template #cell(level)="data">
           <b-progress height="23px" :value="data.value[1]" max="5" variant="purple" v-if="data.value[0]"></b-progress>
           <b-progress height="25px" :value="data.value" max="10" variant="success" :precision="1" v-else-if="!Number.isInteger(data.value)" show-value>
@@ -41,41 +41,30 @@
       <a href="https://www.freecodecamp.org/certification/fcc9706ec7b-335d-4c95-a3bf-e2a56f480491/javascript-algorithms-and-data-structures" target="_blank" class="text-white">Certification</a>
       from FreeCodeCamp
     </p>
-<!--    <p class="font-size-100">-->
-<!--      It is possible to view my Start2Impact profile via the following link:-->
-<!--      <a href="https://talent.start2impact.it/profile/pietro-tamburini" target="_blank" class="text-white">My Profile</a>-->
-<!--    </p>-->
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'Skills',
+  props: {
+    skillsData: {
+      type: Array,
+      required: true
+    }
+  },
   data: function () {
     return {
       isMobile: false,
       ignore: ['type'],
-      items: [
-        { name: 'JavaScript', type: 'Hard Skill', rating: 'Excellent', level: 9 },
-        { name: 'Vue.js', type: 'Hard Skill', rating: 'Very Good', level: 9 },
-        { name: 'HTML5, CSS3, SASS', type: 'Hard Skill', rating: 'Very Good', level: 8.5 },
-        { name: 'Python', type: 'Hard Skill', rating: 'Great', level: 8.5 },
-        { name: 'React', type: 'Hard Skill', rating: 'Great', level: 7.5 },
-        { name: 'Dart', type: 'Hard Skill', rating: 'Good', level: 7.5 },
-        { name: 'Solidity', type: 'Hard Skill', rating: 'Good', level: 6.5 },
-        { name: 'Resilience', type: 'Soft Skill', rating: 'Excellent', level: [true, 4.8] },
-        { name: 'Problem Solving', type: 'Soft Skill', rating: 'Very Good', level: [true, 4.2] },
-        { name: 'Precision', type: 'Soft Skill', rating: 'Great', level: [true, 3.6] },
-        { name: 'Proactivity', type: 'Soft Skill', rating: 'Good', level: [true, 3.4] }
-      ],
       fields: [
         { key: 'name', label: 'Name', tdClass: 'align-middle', stickyColumn: true },
         { key: 'type', label: 'Type', tdClass: 'align-middle' },
         { key: 'rating', label: 'Rating', tdClass: 'align-middle' },
         { key: 'level', label: 'Level', tdClass: 'align-middle' }
       ],
-      filteredFields: []
+      filteredFields: [],
+      skill: []
     }
   },
   methods: {
